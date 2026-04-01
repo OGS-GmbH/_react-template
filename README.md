@@ -12,13 +12,28 @@ _A project template with a ready-to-use structure._
   Simple configuration lets you start your projects quickly without complex setup.
 
 - **Preconfigured Tooling**\
-  Includes Oxlint, ESLint and TypeScript configs out of the box.
+  Includes Oxlint, Oxfmt, Rolldown, TypeScript and more tooling out of the box.
 
 - **Modular Structure**\
   Organized folder layout for scalable and maintainable projects.
 
 - **Development Friendly**\
   Quick start with minimal setup required for new applications.
+
+## Tooling
+
+✅ Oxlint
+✅ Oxfmt
+✅ Rolldown (with tsdown)
+✅ TypeScript
+✅ VitePress
+✅ TypeDoc
+✅ VitePress
+✅ GitHub Actions
+✅ Release Please
+✅ Commitlint
+✅ lint-staged
+✅ Vitest (+ coverage and React support)
 
 ## License
 
