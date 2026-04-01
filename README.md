@@ -22,18 +22,20 @@ _A project template with a ready-to-use structure._
 
 ## Tooling
 
-✅ Oxlint
-✅ Oxfmt
-✅ Rolldown (with tsdown)
-✅ TypeScript
-✅ VitePress
-✅ TypeDoc
-✅ VitePress
-✅ GitHub Actions
-✅ Release Please
-✅ Commitlint
-✅ lint-staged
-✅ Vitest (+ coverage and React support)
+| Tool | Extras |
+| --- | --- |
+| ✅ `oxlint` | |
+| ✅ `oxfmt` | |
+| ✅ `Rolldown` | with `tsdown` |
+| ✅ `TypeScript` | |
+| ✅ `VitePress` | |
+| ✅ `TypeDoc` | |
+| ✅ `GitHub Actions` | |
+| ✅ `release-please` | |
+| ✅ `commitlint` | |
+| ✅ `lint-staged` | |
+| ✅ `husky` | |
+| ✅ `Vitest` | Coverage and `React` support |
 
 ## License
 
