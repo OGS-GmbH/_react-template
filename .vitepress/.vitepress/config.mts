@@ -3,11 +3,13 @@ import { defineConfig } from "vitepress";
 import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
 import packageJson from "../../package.json";
 
+const repositoryName = packageJson.name.split("/").pop();
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   ignoreDeadLinks: true,
-  title: "_react-template",
-  description: "A project template with a ready-to-use structure.",
+  title: repositoryName,
+  description: packageJson.description,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     externalLinkIcon: true,
@@ -31,10 +33,10 @@ export default defineConfig({
       {
         text: packageJson.version,
         items: [
-          { text: "Repository", link: "https://github.com/OGS-GmbH/_react-template" },
+          { text: "Repository", link: `https://github.com/OGS-GmbH/${repositoryName}` },
           {
             text: "Changelog",
-            link: "https://github.com/OGS-GmbH/_react-template/blob/main/CHANGELOG.md"
+            link: `https://github.com/OGS-GmbH/${repositoryName}/blob/main/CHANGELOG.md`
           },
           { text: "Contributing", link: "/other/contributing" }
         ]
@@ -83,7 +85,7 @@ export default defineConfig({
         text: "Legal",
         items: [
           { text: "Disclaimer", link: "/legal/disclaimer" },
-          { text: "MIT License", link: "/legal/license" },
+          { text: `${packageJson.license} License`, link: "/legal/license" },
           { text: "Copyright © 2026 — present OGS GmbH", link: "https://www.ogs.de/en/" }
         ]
       }
@@ -123,10 +125,10 @@ export default defineConfig({
       }
     ]
   ],
-  base: "/_react-template/",
+  base: `/${repositoryName}/`,
   srcDir: "../dist/vitepress-src",
   outDir: "../dist/docs",
-  titleTemplate: ":title - OGS _react-template",
+  titleTemplate: `:title - OGS ${repositoryName}`,
   cleanUrls: true,
   appearance: true,
   markdown: {
