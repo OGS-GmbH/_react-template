@@ -1,3 +1,4 @@
+import { assetsPlugin } from "@ogs-gmbh/rolldown-plugin-assets";
 import { packageJsonPlugin } from "@ogs-gmbh/rolldown-plugin-package-json";
 import { defineConfig } from "tsdown";
 import packageJson from "./package.json" with { type: "json" };
@@ -24,6 +25,7 @@ export default defineConfig({
   deps: { skipNodeModulesBundle: true, neverBundle: [/.*/] },
   banner: copyrightBanner,
   plugins: [
+    assetsPlugin(["README.md", "LICENSE", "CHANGELOG.md"]),
     packageJsonPlugin({
       clean: true,
       override: {

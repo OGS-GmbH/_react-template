@@ -39,6 +39,7 @@
     "@commitlint/config-conventional": "^20.5.0",
     "@commitlint/prompt-cli": "^20.5.0",
     "@ogs-gmbh/oxlint-presets": "^1.0.5",
+    "@ogs-gmbh/rolldown-plugin-assets": "^1.0.1",
     "@ogs-gmbh/rolldown-plugin-package-json": "^1.1.0",
     "@ogs-gmbh/vitepress-plugin-sidebar": "^1.0.3",
     "@ogs-gmbh/vitepress-theme": "^1.1.0",
